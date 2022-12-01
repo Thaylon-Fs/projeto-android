@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+*{
+    margin: 0%;
+    padding: 0px;
+}
+    @import url(fontes/idroid.otf);
+    @font-face {
+        font-family:Android;
+        src: url(fontes/idroid.otf);
+    }
+
+:root{
+
+    --cor0:#143523;
+    --cor1:#6eb68e;
+    --cor2:#84E1AD;
+    --cor3:#5BD94A;
+
+    --font-android:Android;
+}
+
+
+body{
+    background-color: var(--cor2);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+header{
+    
+   min-height: 150px ;
+   background-image: linear-gradient(to top , var(--cor0), var(--cor1));
+   padding-top: 30px;
+   text-align: center;
+   color: #fff;
+   
+}
+header h1{
+   text-shadow: 3px 3px  rgba(0, 0, 0, 0.24);
+  font-weight: normal;
+  font-size: 3em;;
+  margin-top: 30px;
+  margin-bottom: 20px;
+    
+}
+
+nav{
+  background-color: #143523;
+  padding-top: 10px;
+  box-shadow: 4px 4px 4px  rgba(0, 0, 0, 0.432);
+}
+nav a {
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1em;
+
+}
+main{
+    box-shadow: 4px 4px 4px 4px  rgba(0, 0, 0, 0.288);
+    background-color: #fff;
+   max-width: 800px;
+   margin: auto;
+   border-radius: 0px 0px 10px 10px;
+   margin-bottom: 10px;
+}
+main h1 , h2 {
+    color:var(--cor0);
+    font-family: var(--font-android);
+} 
+
+p{
+    padding: 5px 0px;
+}
+
+article{
+
+    padding: 10px;
+
+}
+
+img.tamanho{
+
+width: 100%;
+
+}
+img.bugdroid{
+    display: block;
+    margin: auto;
+    border-top-left-radius: 10px ;
+    border-top-right-radius:10px ;
+}
+div.video{
+    background-color: #fff;
+    margin: 0px -10px 30px -10px; 
+    padding: 20px;
+    padding-bottom: 55%;
+    position: relative;
+}
+
+div.video > iframe{
+
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px  rgba(0, 0, 0, 0.267);
+
+}
+aside > ul {
+    list-style-type: '\2714\00A0';
+    list-style-position:inside;
+    
+    columns: 2;
+}
+aside h3 {
+    background-color: #143523;
+    color: #fff;
+    padding: 10px;
+    margin: -10px -10px 0px -10px; 
+    border-radius: 10px 10px 0px 0px ;
+}
+aside p{
+    padding: 10px;
+}
+footer{
+    
+    text-align: center;
+    color: #fff;
+    background-color:var(--cor0);
+}
